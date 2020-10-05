@@ -20,7 +20,7 @@ def main(argv):
                     bitrate = f.info.bitrate / 1000
                     sample_rate = f.info.sample_rate
 
-                    if sample_rate > 48000 or bitrate > 128:
+                    if sample_rate > 41000:
                         unsupportedFiles.append(file)
                     
         with open(os.path.dirname(os.path.realpath(__file__)) + '/unsupported_files.txt', 'w') as f:

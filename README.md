@@ -2,7 +2,7 @@ About
 -----
 Tool for testing your audio files compatibility with XDJs and CDJs.
 
-Get Started
+Usage
 -----------
 Run in the same folder as app.py
 ```elm
