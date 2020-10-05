@@ -19,7 +19,8 @@ def main(argv):
 #                    bitrate = f.info.bitrate / 1000
 #                    sample_rate = f.info.sample_rate
                     unsupportedFiles.append(file)
-                    
+
+        unsupportedFiles.sort()          
         with open(os.path.dirname(os.path.realpath(__file__)) + '/unsupported_files.txt', 'w') as f:
             for item in unsupportedFiles:
                 f.write("%s\n" % item)
