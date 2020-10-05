@@ -13,15 +13,12 @@ def main(argv):
 
         for root, dirs, files in os.walk(dir_path):
             for file in files:
-                if file.endswith(".flac") or file.endswith(".mp3"):
+                if file.endswith(".flac"):
                     print(file)
-                    f = mutagen.File(os.path.join(root, file))
-
-                    bitrate = f.info.bitrate / 1000
-                    sample_rate = f.info.sample_rate
-
-                    if sample_rate > 41000:
-                        unsupportedFiles.append(file)
+#                    f = mutagen.File(os.path.join(root, file))
+#                    bitrate = f.info.bitrate / 1000
+#                    sample_rate = f.info.sample_rate
+                    unsupportedFiles.append(file)
                     
         with open(os.path.dirname(os.path.realpath(__file__)) + '/unsupported_files.txt', 'w') as f:
             for item in unsupportedFiles:

@@ -1,6 +1,6 @@
 About
 -----
-Tool for testing your audio files compatibility with XDJs and CDJs.
+Tool for testing your audio files compatibility with XDJs and CDJs using Mutagen.
 
 Usage
 -----------
